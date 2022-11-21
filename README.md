@@ -6,14 +6,14 @@ The liner programming model is given as following:
 
 $$\min_{x_{plm}, y_{pm} s_{prm}} \sum_{p=1}^{3} \sum_{l=1}^{3} \sum_{m=1}^{12} ECPU_{pl}x_{plm}+ 1.2\sum_{p=1}^{3} \sum_{r=1}^{8} \sum_{m=1}^{12} SUC_{pr}s_{prm} $$
 
-\text{s.t}\;& 
- y_{pm}\sum_{l} UPH_{pl}=\frac{1}{3}\sum_{r=1}^{8}D_{rm}, \quad \forall p\in P, m \in M \label{eq_current}\\ &
- x_{plm}=y_{pm}UPH_{pl}, \quad \forall p\in P ,l \in L, m \in M \label{eq_wear_tear}\\&
- x_{plm} \leq 160 UPH_{pl}, \quad \forall p\in P ,l \in L,\forall m \in M\label{eq_prod}\\
-& y_{pm}\sum_{l} UPH_{pl}=\sum_{r=1}^{8} s_{prm}, \quad \forall p \in P, m\in M \label{eq_supp}\\
-& \sum_{p=1}^{3} s_{prm} =D_{rm}, \quad \forall m\in M, r\in R\label{eq_demand}\\
-&x_{plm}\geq 0, \quad \forall p \in P, l\in L, m\in M \label{eq_non1}\\
-&s_{prm}\geq 0, \quad \forall p \in P, r\in R, m\in M\label{eq_non2}
+$$\text{s.t} /; y_{pm}\sum_{l} UPH_{pl}=\frac{1}{3}\sum_{r=1}^{8}D_{rm}, \quad \forall p\in P, m \in M $$
+
+ $$x_{plm}=y_{pm}UPH_{pl}, \quad \forall p\in P ,l \in L, m \in M $$
+ $$x_{plm} \leq 160 UPH_{pl}, \quad \forall p\in P ,l \in L,\forall m \in M $$
+$$ y_{pm}\sum_{l} UPH_{pl}=\sum_{r=1}^{8} s_{prm}, \quad \forall p \in P, m\in M $$
+$$\sum_{p=1}^{3} s_{prm} =D_{rm}, \quad \forall m\in M, r\in R $$
+$$x_{plm}\geq 0, \quad \forall p \in P, l\in L, m\in M $$
+$$s_{prm}\geq 0, \quad \forall p \in P, r\in R, m\in M $$
 
 
 Constraints \eqref{eq_current} ensure that every factory produces exactly one third of total demand. Constraints \eqref{eq_wear_tear} ensures "equal-wear-and-tear" policy is enforced. Constraints \eqref{eq_prod} guarantee that production capacity is not exceeded. Constraints \eqref{eq_supp} are the classical supply constraints in transportation problem. Constraints \eqref{eq_demand} are the classical demand constraints in transportation problem \cite{bazaraa2009}. Constraints \eqref{eq_non1} and \eqref{eq_non2} are usual non-negativity constraints. 
