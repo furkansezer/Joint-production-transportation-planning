@@ -4,7 +4,7 @@ The objective is comprised of sum of total production cost and total transportat
 
 The liner programming model is given as following:
 
-$$\min_{x_{plm}, y_{pm} s_{prm}} &\sum_{p=1}^{3} \sum_{l=1}^{3} \sum_{m=1}^{12} ECPU_{pl}x_{plm}+ 1.2\sum_{p=1}^{3} \sum_{r=1}^{8} \sum_{m=1}^{12} SUC_{pr}s_{prm} $$
+$$\min_{x_{plm}, y_{pm} s_{prm}} \sum_{p=1}^{3} \sum_{l=1}^{3} \sum_{m=1}^{12} ECPU_{pl}x_{plm}+ 1.2\sum_{p=1}^{3} \sum_{r=1}^{8} \sum_{m=1}^{12} SUC_{pr}s_{prm} $$
 
 \text{s.t}\;& 
  y_{pm}\sum_{l} UPH_{pl}=\frac{1}{3}\sum_{r=1}^{8}D_{rm}, \quad \forall p\in P, m \in M \label{eq_current}\\ &
