@@ -5,12 +5,19 @@ The objective is comprised of sum of total production cost and total transportat
 The liner programming model is given as following:
 
 $$\min_{x_{plm}, y_{pm} s_{prm}} \sum_{p=1}^{3} \sum_{l=1}^{3} \sum_{m=1}^{12} ECPU_{pl}x_{plm}+ 1.2\sum_{p=1}^{3} \sum_{r=1}^{8} \sum_{m=1}^{12} SUC_{pr}s_{prm} $$
+
 $$\text{s.t} /; y_{pm}\sum_{l} UPH_{pl}=\frac{1}{3}\sum_{r=1}^{8}D_{rm}, \quad \forall p\in P, m \in M $$
+
 $$x_{plm}=y_{pm}UPH_{pl}, \quad \forall p\in P ,l \in L, m \in M $$
+
 $$x_{plm} \leq 160 UPH_{pl}, \quad \forall p\in P ,l \in L,\forall m \in M $$
+
 $$ y_{pm}\sum_{l} UPH_{pl}=\sum_{r=1}^{8} s_{prm}, \quad \forall p \in P, m\in M $$
+
 $$\sum_{p=1}^{3} s_{prm} =D_{rm}, \quad \forall m\in M, r\in R $$
+
 $$x_{plm}\geq 0, \quad \forall p \in P, l\in L, m\in M $$
+
 $$s_{prm}\geq 0, \quad \forall p \in P, r\in R, m\in M $$
 
 
