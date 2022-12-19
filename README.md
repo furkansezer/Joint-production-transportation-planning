@@ -6,9 +6,7 @@ The liner programming model is given as following:
 
 $$\min_{x_{plm}, y_{pm} s_{prm}} \sum_{p=1}^{3} \sum_{l=1}^{3} \sum_{m=1}^{12} ECPU_{pl}x_{plm}+ 1.2\sum_{p=1}^{3} \sum_{r=1}^{8} \sum_{m=1}^{12} SUC_{pr}s_{prm}, \quad (1) $$
 
-subject to $$y_{pm}\sum_{l} UPH_{pl}=\frac{1}{3}\sum_{r=1}^{8}D_{rm}, \quad \forall p\in P, m \in M, \quad (2) $$
-
-$$x_{plm}=y_{pm}UPH_{pl}, \quad \forall p\in P ,l \in L, m \in M, \quad (3) $$
+subject to $$x_{plm}=y_{pm}UPH_{pl}, \quad \forall p\in P ,l \in L, m \in M, \quad (3) $$
 
 $$x_{plm} \leq 160 UPH_{pl}, \quad \forall p\in P ,l \in L,\forall m \in M, \quad (4) $$
 
@@ -25,4 +23,4 @@ Constraints (2) ensure that every factory produces exactly one third of total de
 
 ## Scenario Analysis
 
-We first solved the base model (1)-(8) which reflects current situation. We removed equal production constraints (2) and solved the model (1)-(8) to perform scenario analysis on removing the policy that each facility is responsible for producing the same number of toys will result in cost savings. We replaced all values of parameters $ECPU_{pl}$ and $UPH_{pl}$ to those of fast-prod lines and solved the model (1)-(8). For demand data, we considered historical and forecasted demand scenarios.
+We replaced all values of parameters $ECPU_{pl}$ and $UPH_{pl}$ to those of fast-prod lines i.e new machines and solved the model (1)-(8). For demand data, we considered historical and forecasted demand scenarios.
