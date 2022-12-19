@@ -200,11 +200,6 @@ try:
         (production[i,j,k]==UPH[i,j]*base_prod[i,k] for i in plants for j in prod_line for k in months),name="production_assignment_to_lines")
     
     
-    #production goal
-    # m.addConstrs(
-    #     (base_prod[i,k]==m_demand[k]/(3*plant_cap[i]) for i in plants for k in months),"production_goal") 
-    
-    
     #working hours constraints
     
     m.addConstrs(
