@@ -23,4 +23,4 @@ Constraints (2) ensure "equal-wear-and-tear" policy is enforced. Constraints (3)
 
 ## Scenario Analysis (Machine Replacement Invesment Analysis)
 
-We replaced all values of parameters $ECPU_{pl}$ and $UPH_{pl}$ to those of fast-prod lines i.e new machines and solved the model (1)-(7) to compare with current situation. For demand data, we considered historical and forecasted demand scenarios.
+Parameters $ECPU_{pl}$ and $UPH_{pl}$ are replaced to those of fast-prod lines i.e new machines and solved the model (1)-(7) to compare with current situation. For demand data, we considered historical and forecasted demand scenarios.
