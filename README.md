@@ -21,7 +21,7 @@ $$s_{prm}\geq 0, \quad \forall p \in P, r\in R, m\in M, \quad (7) $$
 
 Constraints (2) ensure "equal-wear-and-tear" policy is enforced. Constraints (3) guarantee that production capacity is not exceeded. Constraints (4) are the classical supply constraints in transportation problem. Constraints (5) are the classical demand constraints in transportation problem (Bazaraa et.al, 2009). Constraints (6) and (7) are usual non-negativity constraints. 
 
-$Model is implemented via Gurobi Pyhton API.$
+Model is implemented via Gurobi Pyhton API.
 
 ## Scenario Analysis (Machine Replacement Invesment Analysis)
 
